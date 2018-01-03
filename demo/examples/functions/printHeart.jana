@@ -1,0 +1,100 @@
+class Main {
+    /* print a heart shape. 
+    *  reference: https://www.zhihu.com/question/20187195
+    */
+    function void main() {
+        var int i, j, k, l, m;
+        var char c, newline, space;
+        let c = 42;
+        let newline = 10;
+        let space = 32;
+        let i = 1;
+        while (i<6) {
+            do Output.printChar(newline);
+            let i = i + 1;
+        }
+
+        //  up 3 lines
+        let i = 1;
+        while (i<4) {
+            let j = 1;
+            while (j < (33-(2*i))) {
+                do Output.printChar(space);
+                let j = j + 1;
+            }
+            let k = 1;
+            while (k < ((4*i) + 2)) {
+                do Output.printChar(c);
+                let k = k + 1;
+            }
+
+            let l = 1;
+            while (l < (14-(4 * i))) {
+                do Output.printChar(space);
+                let l = l + 1;
+            }
+
+            let m = 1;
+            while (m < ((4*i) + 2)) {
+                do Output.printChar(c);
+                let m = m + 1;
+            }
+
+            do Output.printChar(newline);
+            let i = i + 1;
+        }
+
+        // middle 3 lines
+        let i = 1;
+        while (i < 4) {
+            let j = 1;
+            while (j < 26) {
+                do Output.printChar(space);
+                let j = j + 1;
+            }
+            let k = 1;
+            while (k < 30) {
+                do Output.printChar(c);
+                let k = k + 1;
+            }
+            do Output.printChar(newline);
+            let i = i + 1;
+        }
+
+        // last 7 lines
+        let i = 7;
+        while (i > 0) {
+            let j = 1;
+            while (j < (41-(2*i))) {
+                do Output.printChar(space);
+                let j = j + 1;
+            }
+
+            let k = 1;
+            while (k<(4*i)) {
+                do Output.printChar(c);
+                let k = k + 1;
+            }
+            do Output.printChar(newline);
+            let i = i - 1;
+        }
+
+        // last one
+        let i = 1;
+        while (i < 40) {
+            do Output.printChar(space);
+            let i = i + 1;
+        }
+        do Output.printChar(c);
+
+        let i = 1;
+        while (i<5) {
+            do Output.printChar(newline);
+            let i = i + 1;
+        }
+        return;
+
+    }
+
+    
+}

@@ -1,0 +1,34 @@
+
+/** nested call test */
+class Main {
+
+    function void main() {
+        var int i;
+   
+        while (true) {
+         
+            let i = Keyboard.readInt("Please input a number\n");
+            
+            if (i>13) {
+                do Output.printString("Too large, overflow.\n");
+            } else {
+                do Output.printString("Answer: ");
+                do Output.printInt(Main.fact(i));
+                do Output.printString("\n");
+            }
+            
+        }   
+        return;
+
+    }
+
+    function int fact(int x) {
+        if (x==1) {
+            return 1;
+        } else {
+            return (Main.fact(x-1) * x);
+        }
+    }
+
+    
+}

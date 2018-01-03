@@ -1,0 +1,18 @@
+
+class Sys {
+
+    // this function implemented in backend. 
+    function void halt() {}
+    
+    /** Prints the given error code in the form "ERR<errorCode>", and halts. */
+    function void error(int errorCode) {
+        var String s;
+        let s=String.new(3);
+        let s="Error code";
+        do Output.printString(s);
+        do Output.printInt(errorCode);
+    do Output.printString("\n");
+        do Sys.halt();
+        return;
+    } 
+}

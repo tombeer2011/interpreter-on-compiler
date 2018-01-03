@@ -1,0 +1,31 @@
+class Main {
+    
+    static int b;
+    static Array a;
+    
+    function void main() {
+        do setTest();
+        do showTest();
+        return;
+    }    
+    
+    function void setTest() {
+        
+        let b = 1234;
+        let a = Array.new(3);
+        let a[0] = 1;
+        let a[1] = 2;
+        let a[2] = 3;
+        return;
+    }
+
+    function void showTest() {
+        do Output.printInt(b);
+        do Output.printInt(a[0]);
+        do Output.printInt(a[1]);
+        do Output.printInt(a[2]);
+        return;
+    }
+    
+    
+}

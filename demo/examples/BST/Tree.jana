@@ -1,0 +1,48 @@
+class BST {
+    
+    field TreeNode root;
+    
+    constructor BST new() {
+        let root = null;
+        return this;    
+    }    
+
+    method void insert(int value) {
+        let root = BST.put(root, value);
+        return;
+    }
+
+    function TreeNode put(TreeNode node, int value) {
+        var TreeNode ret;
+        var int rootVal;
+        if (node == null) {
+            let ret = TreeNode.new(value, null, null);
+            return ret;
+        } else {
+            let rootVal = node.getValue();
+            if (rootVal > value) {
+                do node.setLeft(BST.put(node.getLeft(), value));
+            } else {
+                do node.setRight(BST.put(node.getRight(), value));
+            }
+            return node;
+        }
+    }
+    
+    method void inorderTranpose() {
+        do BST.dfs(root);
+        return;    
+    }    
+
+    function void dfs(TreeNode root) {
+        if (root != null) {
+            do BST.dfs(root.getLeft());
+            do Output.printString("visit :");
+            do Output.printInt(root.getValue());
+            do Output.printString("\n");
+            do BST.dfs(root.getRight());
+        }
+        return;
+    }
+
+}

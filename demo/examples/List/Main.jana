@@ -1,0 +1,13 @@
+class Main {
+    function void main() {
+        
+        var List linklist;
+        let linklist = List.new();
+        do linklist.insertToHead(1);
+        do linklist.insertToHead(2);
+        do linklist.insertToHead(3);
+        do linklist.printList();
+        return;
+        
+    }
+}

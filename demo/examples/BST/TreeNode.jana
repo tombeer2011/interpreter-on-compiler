@@ -1,0 +1,25 @@
+
+class TreeNode {
+    
+    field int val;
+    field TreeNode left;
+    field TreeNode right;
+
+    
+    constructor TreeNode new(int value, TreeNode l, TreeNode r) {
+        let val = value;
+        let left = l;
+        let right = r;
+        return this;                
+    }    
+    
+    method int getValue() { return val; }
+    method TreeNode getLeft() { return left; }
+    method TreeNode getRight() { return right; }
+    
+    method void setValue(int value) { let val=value; return; }
+    method void setLeft(int l) { let left=l; return; }
+    method void setRight(int r) { let right=r; return; }
+
+}
+

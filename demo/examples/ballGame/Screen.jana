@@ -1,0 +1,75 @@
+class Screen {
+    static int rightUp, rightDown, leftUp, leftDown;    
+    field int x;
+    field int y;
+    field int dir;
+    
+    /**
+    * param beginY <- [1, 24]
+    * param beginX <- [1, 39]
+    * param direction <- [1, 4]
+    */
+    constructor Screen new(int beginX, int beginY, int direction) {
+        let rightUp = 1;
+        let rightDown = 2;
+        let leftUp = 3;
+        let leftDown = 4;
+        let x = beginX;
+        let y = beginY;
+        let dir = direction;
+        return this;
+    }
+    
+    method void move() {
+        // unti-clock-wise
+        if (y==24 && dir==rightDown) { let dir = rightUp; }
+        if (x==39 && dir==rightUp) { let dir = leftUp; }
+        if (y==2 && dir==leftUp) { let dir = leftDown; }
+        if (x==1 && dir==leftDown) { let dir = rightDown; }
+        
+        // clock-wise
+        if (y==24 && dir==leftDown) { let dir = leftUp; }
+        if (x==1 && dir==leftUp) { let dir = rightUp; }
+        if (y==2 && dir==rightUp) { let dir = rightDown; }
+        if (x==39 && dir==rightDown) { let dir = leftDown; }
+        
+        // nomal case
+        if (dir == rightUp) {
+            let x = x + 1;
+            let y = y - 1;
+            return;
+        }
+        if (dir == rightDown) {
+            let x = x + 1;
+            let y = y + 1;
+            return;
+        }
+        if (dir == leftUp) {
+            let x = x - 1;
+            let y = y - 1;
+            return;
+        }
+        if (dir == leftDown) {
+            let x = x - 1;
+            let y = y + 1;
+            return;
+        }
+    }
+    
+    method void showBall() {
+        var int i, j;
+        for (let i=0; i<25; let i=i+1) {
+            for (let j=0; j<80; let j=j+2) {
+                if (i==y && j==x*2) {
+                    do Output.printString("()");      
+                } else {
+                    do Output.printString("  ");                
+                }
+            }
+            do Output.printString("\n");    
+        }
+        return;
+    }
+    
+
+}

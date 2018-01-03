@@ -1,0 +1,21 @@
+class Main {
+    
+    function void main() {
+        var int i, j;
+        var char c;
+        var Screen src;
+        let src = Screen.new(10, 5, 3);
+        while (true) {
+            do src.move();
+            do src.showBall();
+            let c = Keyboard.readChar();
+            
+        }        
+        
+        return ;
+       
+    }
+    
+  
+        
+}

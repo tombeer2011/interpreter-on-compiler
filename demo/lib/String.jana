@@ -1,0 +1,121 @@
+
+
+class String {
+    field Array a;
+    field int stringLength; 
+    field int allocLength;
+
+    constructor String new(int maxLength) {
+        if (maxLength<1) {
+            let maxLength = 1;
+        }
+        let allocLength = maxLength;
+        let a = Array.new(maxLength);
+        let stringLength = 0;
+        return this;
+    }
+    
+
+    method int length() {
+        return stringLength;
+    }
+    
+    
+    method void dispose() {
+         do a.dispose();
+         do Memory.deAlloc(this);
+        return;
+    }
+
+    
+    method char charAt(int j) {
+        var char c;
+        let c=a[j];
+        return c;
+    }
+
+
+    method void setCharAt(int j, char c) {
+        let a[j]=c;
+        return;
+    }
+
+    method void eraseLastChar() {
+        var int length;
+        let length = stringLength;
+        let stringLength=stringLength-1;
+        return;
+    }
+    
+
+    method String appendChar(char c) {
+        var int length;
+        if(stringLength==allocLength){
+            do Sys.error(17);
+        }
+        let length = stringLength;
+        let a[length] = c;
+        let stringLength=stringLength+1;
+        return this;
+    }
+
+   
+    
+
+    /////////////this is important/////////////////
+
+   method int intValue() {
+        var int i, result, temp;
+        var boolean flag;
+        
+        let flag=false; 
+        let i=0;
+       
+        let result = 0;
+        if (a[0] == 45) {
+            let flag = true;
+            let i=i+1;
+        }
+        while (i < stringLength){
+            let temp = a[i]-48;
+            let result = Math.multiply(result,10) + temp;
+            let i=i+1;
+        }
+
+        if (flag==true) {
+            let result = -result;
+        }
+        
+        return result;
+    }
+    
+    
+    method void setInt(int number) {
+        
+        var int lastDigit, divNumber, tenNumber;
+        var int c;
+            
+
+        if (number < 0) {
+            do appendChar(45);
+            let number = Math.abs(number);
+        }
+        
+        
+        let divNumber = Math.divide(number,10);
+        let tenNumber = Math.multiply(divNumber,10);
+        let lastDigit = number - tenNumber;
+        
+        let c = lastDigit+48;
+        
+        if (number<10){
+            do appendChar(c);
+        } else {
+            do setInt(divNumber);
+            do appendChar(c);
+        }
+        
+        return;
+    }
+
+}

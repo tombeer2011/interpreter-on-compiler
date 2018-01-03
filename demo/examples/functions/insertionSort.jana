@@ -1,0 +1,44 @@
+
+/** sort a array with insertionSort method */
+class Main {
+    function void main() {
+        var Array a;
+        var int length, i, k, tmp;
+        var boolean breaker;
+        
+        // read numbers from Keyboard.        
+
+        let length = Keyboard.readInt("How many numbers? ");
+        let a = Array.new(length);
+        
+        for (let i=0; i<length; let i=i +1) {
+            let a[i] = Keyboard.readInt("Enter the next number: ");        
+        }
+        
+        for (let i = 1; i <length; let i=i+1) {
+            let tmp = a[i];
+            let k = i-1;
+            let breaker = false;
+            while (breaker==false && k>=0) {
+                if (a[k] > tmp) {
+                    let a[k+1] = a[k];
+                    let k = k - 1;
+                } else {
+                    let breaker = true;
+                }
+            }
+            let a[k+1] = tmp;
+        }
+        
+        do Output.printString("after-insertion-sort:\n");
+        
+        // put the result to screen.
+        
+        for (let i = 0; i < length; let i=i+1) {
+            do Output.printInt(a[i]);
+            do Output.printString("\n");
+        }       
+        
+        return;
+    }
+}

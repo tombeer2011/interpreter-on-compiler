@@ -1,0 +1,48 @@
+
+/**
+ * A library for handling user input from the keyboard.
+ */
+class Keyboard {
+
+  
+    /**                                
+     * Reads the next character from the keyboard.
+     */
+
+    // this function is conected to the eumlator.
+    // function char readChar() {}
+        
+    /**                                
+     * Prints the message on the screen, reads the next line
+     * (until a newline character) from the keyboard, and returns its value.
+     */
+
+        function String readLine(String message) {
+        var String s;
+        var char c;
+        do Output.printString(message);
+        let s=String.new(100);
+        while(true){
+            let c=Keyboard.readChar();
+            if (c==10){
+                return s;
+            } else {
+                let s=s.appendChar(c);
+            }
+        }
+        return s;
+    }   
+
+    /**                             
+     * Prints the message on the screen, reads the next line
+     * (until a newline character) from the keyboard, and returns its
+     * integer value (until the first non numeric character).
+     */
+    function int readInt(String message) {
+        var String s;
+        let s=Keyboard.readLine(message);
+        return s.intValue();
+    }
+
+    
+}

@@ -1,0 +1,32 @@
+
+class List {
+    
+    field Node head;
+    
+    constructor List new() {
+        let head = Node.new(-1, null); // add a dummy node to the list.
+        return this;
+    }
+    
+    method void insertToHead(int value) {
+        var Node tmp;
+        let tmp = Node.new(value, head.getNext());
+        do head.setNext(tmp);
+        return;
+    }
+
+    
+    method void printList() {
+        var Node tmp;
+        let tmp = head.getNext();
+        do Output.printString("List : ");  
+        while (tmp != null) {
+            do Output.printInt(tmp.getValue());
+            do Output.printString("->");        
+            let tmp = tmp.getNext();        
+        }
+        do Output.printString("\n");  
+        return;
+    }
+    
+}

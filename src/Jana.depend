@@ -1,0 +1,359 @@
+# depslib dependency file v1.0
+1494055196 source:/home/zlq/Desktop/Jana/JanaCompilerFrontEnd/jana.cpp
+	<iostream>
+	"global.h"
+	"tokenizer.h"
+	"syntaxer.h"
+	"test.h"
+	"Loader.h"
+	"Utility.h"
+	"Parser.h"
+	"Writer.h"
+
+1494034826 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/global.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	"error.h"
+
+1488243426 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/error.h
+	"global.h"
+
+1494034706 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/tokenizer.h
+	"global.h"
+	"error.h"
+
+1494056149 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/syntaxer.h
+	"tokenizer.h"
+	"symbol.h"
+	"code_gen.h"
+
+1494035963 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/symbol.h
+	"global.h"
+
+1488004705 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/code_gen.h
+	"global.h"
+
+1488004705 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/test.h
+	"global.h"
+	"tokenizer.h"
+	"syntaxer.h"
+
+1494055036 source:/home/zlq/Desktop/Jana/JanaCompilerFrontEnd/main.cpp
+
+1494055144 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/Loader.h
+	"Utility.h"
+
+1494055179 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/Utility.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<assert.h>
+	<termios.h>
+	<iostream>
+	<vector>
+	<memory>
+	<map>
+	<fstream>
+	<sstream>
+
+1488245883 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/Parser.h
+	"Loader.h"
+	"Writer.h"
+	"Utility.h"
+
+1488245889 /home/zlq/Desktop/Jana/JanaCompilerFrontEnd/Writer.h
+
+1494066816 source:/home/zlq/Desktop/Jana/Jana/jana.cpp
+	"tokenizer.h"
+	"syntaxer.h"
+	"loader.h"
+	"utility.h"
+	"parser.h"
+	"asmwriter.h"
+
+1494057166 /home/zlq/Desktop/Jana/Jana/global.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	"error.h"
+
+1488243426 /home/zlq/Desktop/Jana/Jana/error.h
+	"global.h"
+
+1494066839 /home/zlq/Desktop/Jana/Jana/tokenizer.h
+	"jerror.h"
+
+1494064960 /home/zlq/Desktop/Jana/Jana/syntaxer.h
+	"tokenizer.h"
+	"symbol.h"
+	"vmwriter.h"
+
+1494057209 /home/zlq/Desktop/Jana/Jana/symbol.h
+
+1488004705 /home/zlq/Desktop/Jana/Jana/code_gen.h
+	"global.h"
+
+1488004705 /home/zlq/Desktop/Jana/Jana/test.h
+	"global.h"
+	"tokenizer.h"
+	"syntaxer.h"
+
+1494055144 /home/zlq/Desktop/Jana/Jana/Loader.h
+	"Utility.h"
+
+1494055179 /home/zlq/Desktop/Jana/Jana/Utility.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<assert.h>
+	<termios.h>
+	<iostream>
+	<vector>
+	<memory>
+	<map>
+	<fstream>
+	<sstream>
+
+1488245883 /home/zlq/Desktop/Jana/Jana/Parser.h
+	"Loader.h"
+	"Writer.h"
+	"Utility.h"
+
+1494056609 /home/zlq/Desktop/Jana/Jana/Writer.h
+
+1494055036 source:/home/zlq/Desktop/Jana/Jana/main.cpp
+
+1494057213 /home/zlq/Desktop/Jana/Jana/vmwriter.h
+
+1494061273 /home/zlq/Desktop/Jana/Jana/loader.h
+	"utility.h"
+
+1494066839 /home/zlq/Desktop/Jana/Jana/utility.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	<string>
+	"jerror.h"
+
+1494066913 /home/zlq/Desktop/Jana/Jana/parser.h
+	"loader.h"
+	"asmwriter.h"
+	"utility.h"
+
+1494066165 /home/zlq/Desktop/Jana/Jana/asmwriter.h
+	"jerror.h"
+
+1494064516 /home/zlq/Desktop/Jana/Jana/jerror.h
+	"utility.h"
+
+1494119461 source:/home/zlq/Desktop/Jana-master/Jana/jana.cpp
+	"tokenizer.h"
+	"syntaxer.h"
+	"loader.h"
+	"utility.h"
+	"parser.h"
+	"asmwriter.h"
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/tokenizer.h
+	"jerror.h"
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/jerror.h
+	"utility.h"
+
+1494078681 /home/zlq/Desktop/Jana-master/Jana/utility.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<unistd.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	<string>
+	"jerror.h"
+
+1494126459 /home/zlq/Desktop/Jana-master/Jana/syntaxer.h
+	"tokenizer.h"
+	"symbol.h"
+	"vmwriter.h"
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/symbol.h
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/vmwriter.h
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/loader.h
+	"utility.h"
+
+1494068557 /home/zlq/Desktop/Jana-master/Jana/parser.h
+	"loader.h"
+	"asmwriter.h"
+	"utility.h"
+
+1494076063 /home/zlq/Desktop/Jana-master/Jana/asmwriter.h
+	"jerror.h"
+
+1494133376 source:/home/zlq/Desktop/Jana/src/jana.cpp
+	"tokenizer.h"
+	"syntaxer.h"
+	"loader.h"
+	"utility.h"
+	"parser.h"
+	"asmwriter.h"
+
+1494133376 /home/zlq/Desktop/Jana/src/tokenizer.h
+	"jerror.h"
+
+1494133376 /home/zlq/Desktop/Jana/src/jerror.h
+	"utility.h"
+
+1494133376 /home/zlq/Desktop/Jana/src/utility.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<unistd.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	<string>
+	"jerror.h"
+
+1494255105 /home/zlq/Desktop/Jana/src/syntaxer.h
+	"tokenizer.h"
+	"symbol.h"
+	"vmwriter.h"
+
+1494133376 /home/zlq/Desktop/Jana/src/symbol.h
+
+1494133376 /home/zlq/Desktop/Jana/src/vmwriter.h
+
+1494133376 /home/zlq/Desktop/Jana/src/loader.h
+	"utility.h"
+
+1494133376 /home/zlq/Desktop/Jana/src/parser.h
+	"loader.h"
+	"asmwriter.h"
+	"utility.h"
+
+1494252491 /home/zlq/Desktop/Jana/src/asmwriter.h
+	"jerror.h"
+
+1514977187 source:/home/zlq/jana/src/jana.cpp
+	"tokenizer.h"
+	"syntaxer.h"
+	"loader.h"
+	"utility.h"
+	"parser.h"
+	"asmwriter.h"
+
+1514977563 /home/zlq/jana/src/tokenizer.h
+	"jerror.h"
+
+1514976143 /home/zlq/jana/src/jerror.h
+	"utility.h"
+
+1514976620 /home/zlq/jana/src/utility.h
+	<errno.h>
+	<stdlib.h>
+	<limits.h>
+	<assert.h>
+	<unistd.h>
+	<cstdio>
+	<iostream>
+	<cmath>
+	<vector>
+	<map>
+	<deque>
+	<string>
+	<queue>
+	<set>
+	<memory>
+	<fstream>
+	<sstream>
+	<stack>
+	<string>
+	"jerror.h"
+
+1514977509 /home/zlq/jana/src/syntaxer.h
+	"tokenizer.h"
+	"symbol.h"
+	"vmwriter.h"
+
+1514977488 /home/zlq/jana/src/symbol.h
+
+1514976485 /home/zlq/jana/src/vmwriter.h
+
+1514976455 /home/zlq/jana/src/loader.h
+	"utility.h"
+
+1514977421 /home/zlq/jana/src/parser.h
+	"loader.h"
+	"asmwriter.h"
+	"utility.h"
+
+1514977521 /home/zlq/jana/src/asmwriter.h
+	"jerror.h"
+

@@ -1,0 +1,138 @@
+
+/**
+ * A basic math library.
+ */
+class Math {
+
+    /** Returns the absolute value of x. */
+    function int abs(int x) {
+            var int absNum;
+            if (x < 0){
+                let absNum = -x;
+            } else {
+                let absNum = x; 
+            }
+            return absNum;
+        }
+        
+    function int logTwo(int x){
+        var int powerTwo,flag;
+        if (x>107374182 && x<=2147483647){
+            return 31;
+        }
+        let powerTwo = 1;
+        let flag = 0;
+        while (powerTwo<x){
+            let powerTwo = powerTwo+powerTwo;
+            let flag = flag + 1;
+        }
+        return flag;
+    }
+    
+    function int power(int x, int y){
+        var int flag;
+        var int result;
+        let flag = y;
+        let result = 1;
+        if(y==0){
+            return 1;
+        }
+        while ( flag>0 ){
+            let result = Math.multiply(result,x);
+            let flag=flag-1;
+        }
+        return result; 
+    }    
+    
+   
+    /** Returns the greater number. */
+    function int max(int a, int b) {
+        if (a>b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
+
+    function int min(int a, int b) {
+        if (a<b) {
+            return a ;
+        }
+        else {
+            return b;
+        }
+    }
+    
+    // these functions are not bitwise functions.
+    function boolean or(int a, int b) {
+        if (a != false) {
+            let a = true;        
+        }
+        if (b != false) {
+            let b = true;            
+        }
+        
+        if (a) { return true; }
+        if (b) { return true; }
+        return false; 
+    }
+    
+    function boolean and(int a, int b) {
+        if (a != false) {
+            let a = true;        
+        }
+        if (b != false) {
+            let b = true;            
+        }
+        
+        if (a==false) { return false; }
+        if (b==false) { return false; }
+        return true;
+    }
+    
+    function int not(int a) {
+        if (a==false) {
+            return true;
+        } else {
+            return false;
+        }     
+    }
+    // === end of these functions.
+    
+    
+    function boolean noteq(int a, int b) {
+        if (a == b) { return false; }
+        return true; 
+    }
+    
+    function boolean lteq(int a, int b) {
+        if (a == b) { return true; }
+        if (a < b) { return true; }
+        return false;    
+    }
+
+    function boolean gteq(int a, int b) {
+        if (a == b) { return true; }
+        if (a > b) { return true; }
+        return false;
+    }
+
+    
+
+    function int mod(int a, int b) {
+        var int m, n, x, ret;        
+        let m = Math.abs(a);
+        let n = Math.abs(b);
+        let x = m / n;
+        let ret = m - x * n;
+        if (a < 0) {
+            return (-ret);        
+        }
+        return ret;
+    }
+    
+
+    
+
+}

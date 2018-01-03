@@ -1,0 +1,21 @@
+class Main {
+    
+
+    function void main () {
+        var BST a;
+        let a = BST.new();
+        do a.insert(2);
+        do a.insert(4);
+        do a.insert(1);
+        do a.insert(5);
+        do a.insert(6);
+        do a.insert(7);
+        do a.insert(3);
+        do a.insert(8);
+        do a.inorderTranpose();        
+        return;
+    }
+    
+    
+
+}
