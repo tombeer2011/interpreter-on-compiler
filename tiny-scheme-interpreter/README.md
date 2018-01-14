@@ -1,4 +1,3 @@
-# Part I
 
 ### Sketch
 
@@ -28,7 +27,6 @@
 "lambda", "define", "if", "cond", "or", "and"
 ```
 
-# Part II
 
 ### Usage
 
@@ -124,8 +122,6 @@ Expect: 3.00009155413138
 ```
 
 ### Run
-![pic](TinyScheme-Python/RUN.PNG)
 
-# Part III
+![pic](RUN.PNG)
 
-TODO: Add More features.
